@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — StatFoot Pro</title>
+  <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="dashboard.html" class="nav-logo">⚽ StatFoot Pro</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+        <li><a href="clubs.html" class="nav-link">Clubes</a></li>
+        <li><a href="players.html" class="nav-link">Jugadores</a></li>
+        <li><a href="matches.html" class="nav-link">Partidos</a></li>
+      </ul>
+      <div class="nav-auth">
+        <a href="login.html" class="btn btn-ghost">Ingresar</a>
+        <a href="register.html" class="btn btn-primary">Registrarse</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-wrapper">
+
+    <div class="dashboard-stats-row">
+      <div class="summary-stat">
+        <span class="stat-value">380</span>
+        <span class="stat-label">Partidos jugados</span>
+      </div>
+      <div class="summary-stat">
+        <span class="stat-value">1,042</span>
+        <span class="stat-label">Goles totales</span>
+      </div>
+      <div class="summary-stat">
+        <span class="stat-value">20</span>
+        <span class="stat-label">Clubes</span>
+      </div>
+      <div class="summary-stat">
+        <span class="stat-value">34</span>
+        <span class="stat-label">Jornada actual</span>
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
+
+      <section class="card area-standings">
+        <h2 class="card-title">Clasificación — La Liga 2024/25</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>#</th><th>Club</th><th>PJ</th>
+              <th>G</th><th>E</th><th>P</th><th>GD</th><th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td class="highlight">FC Barcelona</td><td>34</td><td>26</td><td>7</td><td>1</td><td>+52</td><td class="highlight">85</td></tr>
+            <tr><td>2</td><td class="highlight">Real Madrid</td><td>34</td><td>24</td><td>6</td><td>4</td><td>+41</td><td class="highlight">78</td></tr>
+            <tr><td>3</td><td class="highlight">Atlético Madrid</td><td>34</td><td>22</td><td>5</td><td>7</td><td>+28</td><td class="highlight">71</td></tr>
+            <tr><td>4</td><td class="highlight">Athletic Club</td><td>34</td><td>18</td><td>8</td><td>8</td><td>+19</td><td class="highlight">62</td></tr>
+            <tr><td>5</td><td class="highlight">Real Sociedad</td><td>34</td><td>16</td><td>9</td><td>9</td><td>+12</td><td class="highlight">57</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card area-matches">
+        <h2 class="card-title">Últimos Resultados</h2>
+        <ul>
+          <li class="match-row">
+            <span class="match-team-name home">Barcelona</span>
+            <span class="match-score-box">3 — 1</span>
+            <span class="match-team-name away">Real Madrid</span>
+          </li>
+          <li class="match-row">
+            <span class="match-team-name home">Atlético</span>
+            <span class="match-score-box">0 — 0</span>
+            <span class="match-team-name away">Athletic</span>
+          </li>
+          <li class="match-row">
+            <span class="match-team-name home">Sevilla</span>
+            <span class="match-score-box">1 — 2</span>
+            <span class="match-team-name away">Sociedad</span>
+          </li>
+          <li class="match-row">
+            <span class="match-team-name home">Villarreal</span>
+            <span class="match-score-box">2 — 2</span>
+            <span class="match-team-name away">Valencia</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card area-scorers">
+        <h2 class="card-title">Máximos Goleadores</h2>
+        <table class="data-table">
+          <thead>
+            <tr><th>#</th><th>Jugador</th><th>Goles</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td class="highlight">Lewandowski</td><td class="highlight">27</td></tr>
+            <tr><td>2</td><td class="highlight">Mbappé</td><td class="highlight">24</td></tr>
+            <tr><td>3</td><td class="highlight">Griezmann</td><td class="highlight">19</td></tr>
+            <tr><td>4</td><td class="highlight">Oyarzabal</td><td class="highlight">17</td></tr>
+            <tr><td>5</td><td class="highlight">Williams</td><td class="highlight">15</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StatFoot Pro — Proyecto de aprendizaje Full-Stack</p>
+  </footer>
+
+</body>
+</html>

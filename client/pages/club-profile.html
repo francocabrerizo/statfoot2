@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FC Barcelona — StatFoot Pro</title>
+  <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="dashboard.html" class="nav-logo">⚽ StatFoot Pro</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="clubs.html" class="nav-link active">Clubes</a></li>
+        <li><a href="players.html" class="nav-link">Jugadores</a></li>
+        <li><a href="matches.html" class="nav-link">Partidos</a></li>
+      </ul>
+      <div class="nav-auth">
+        <a href="login.html" class="btn btn-ghost">Ingresar</a>
+        <a href="register.html" class="btn btn-primary">Registrarse</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-wrapper">
+
+    <section class="card" style="margin-bottom: var(--spacing-lg)">
+      <div class="player-header">
+        <div class="player-photo">
+          <figure>
+            <div class="club-logo" style="width:120px;height:120px;font-size:3rem;border-radius:50%;background:var(--color-bg);border:3px solid var(--color-accent);display:flex;align-items:center;justify-content:center;">
+              🔵🔴
+            </div>
+          </figure>
+        </div>
+        <div class="player-info">
+          <h1>FC Barcelona</h1>
+          <p><strong>Liga:</strong> La Liga</p>
+          <p><strong>Estadio:</strong> Spotify Camp Nou</p>
+          <p><strong>Fundado:</strong> 1899</p>
+          <p><strong>Ciudad:</strong> Barcelona, España</p>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card"><span class="stat-value">1°</span><span class="stat-label">Posición</span></div>
+        <div class="stat-card"><span class="stat-value">85</span><span class="stat-label">Puntos</span></div>
+        <div class="stat-card"><span class="stat-value">26</span><span class="stat-label">Victorias</span></div>
+        <div class="stat-card"><span class="stat-value">78</span><span class="stat-label">Goles a favor</span></div>
+        <div class="stat-card"><span class="stat-value">26</span><span class="stat-label">Goles en contra</span></div>
+        <div class="stat-card"><span class="stat-value">+52</span><span class="stat-label">Diferencia</span></div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-bottom: var(--spacing-lg)">
+      <h2 class="card-title">Plantilla</h2>
+      <table class="data-table">
+        <thead>
+          <tr><th>Jugador</th><th>Posición</th><th>Goles</th><th>Asist.</th><th>Valoración</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="highlight"><a href="player-profile.html">R. Lewandowski</a></td><td><span class="position-badge">ST</span></td><td>27</td><td>8</td><td>7.8</td></tr>
+          <tr><td class="highlight"><a href="player-profile.html">P. Gavi</a></td><td><span class="position-badge">CM</span></td><td>6</td><td>12</td><td>7.5</td></tr>
+          <tr><td class="highlight"><a href="player-profile.html">M. ter Stegen</a></td><td><span class="position-badge">GK</span></td><td>0</td><td>0</td><td>7.4</td></tr>
+          <tr><td class="highlight"><a href="player-profile.html">R. Araújo</a></td><td><span class="position-badge">CB</span></td><td>3</td><td>1</td><td>7.6</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Últimos Resultados</h2>
+      <ul>
+        <li class="match-row">
+          <span class="match-meta left">La Liga · J34</span>
+          <div class="match-teams">
+            <span class="match-team-name home">FC Barcelona</span>
+            <span class="match-score-box">3 — 1</span>
+            <span class="match-team-name away">Real Madrid</span>
+          </div>
+          <span class="match-meta right"><span class="badge badge-win">V</span></span>
+        </li>
+        <li class="match-row">
+          <span class="match-meta left">UCL · SF</span>
+          <div class="match-teams">
+            <span class="match-team-name home">FC Barcelona</span>
+            <span class="match-score-box">2 — 0</span>
+            <span class="match-team-name away">Juventus</span>
+          </div>
+          <span class="match-meta right"><span class="badge badge-win">V</span></span>
+        </li>
+        <li class="match-row">
+          <span class="match-meta left">La Liga · J33</span>
+          <div class="match-teams">
+            <span class="match-team-name home">Atlético</span>
+            <span class="match-score-box">1 — 1</span>
+            <span class="match-team-name away">FC Barcelona</span>
+          </div>
+          <span class="match-meta right"><span class="badge badge-draw">E</span></span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 StatFoot Pro — Proyecto de aprendizaje Full-Stack</p>
+  </footer>
+
+</body>
+</html>
