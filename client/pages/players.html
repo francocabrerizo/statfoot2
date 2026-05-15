@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jugadores — StatFoot Pro</title>
+  <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="dashboard.html" class="nav-logo">⚽ StatFoot Pro</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="clubs.html" class="nav-link">Clubes</a></li>
+        <li><a href="players.html" class="nav-link active">Jugadores</a></li>
+        <li><a href="matches.html" class="nav-link">Partidos</a></li>
+      </ul>
+      <div class="nav-auth">
+        <a href="login.html" class="btn btn-ghost">Ingresar</a>
+        <a href="register.html" class="btn btn-primary">Registrarse</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-wrapper">
+    <h1 class="page-title">Jugadores</h1>
+
+    <!-- Filtros — funcionalidad real llega con JavaScript -->
+    <div class="filter-bar">
+      <div class="form-group">
+        <label class="form-label" for="search-player">Buscar jugador</label>
+        <input class="form-input" type="text" id="search-player" placeholder="Nombre del jugador...">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="filter-position">Posición</label>
+        <select class="form-select" id="filter-position">
+          <option value="">Todas</option>
+          <option value="GK">Portero</option>
+          <option value="DEF">Defensa</option>
+          <option value="MID">Centrocampista</option>
+          <option value="FWD">Delantero</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="filter-club">Club</label>
+        <select class="form-select" id="filter-club">
+          <option value="">Todos</option>
+          <option>FC Barcelona</option>
+          <option>Real Madrid</option>
+          <option>Atlético Madrid</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card">
+      <table class="data-table" id="players-table">
+        <thead>
+          <tr>
+            <th>Jugador</th>
+            <th>Club</th>
+            <th>Posición</th>
+            <th>PJ</th>
+            <th>Goles</th>
+            <th>Asist.</th>
+            <th>Valoración</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="highlight"><a href="player-profile.html">R. Lewandowski</a></td>
+            <td>FC Barcelona</td>
+            <td><span class="position-badge">ST</span></td>
+            <td>34</td><td>27</td><td>8</td><td>7.8</td>
+          </tr>
+          <tr>
+            <td class="highlight"><a href="player-profile.html">K. Mbappé</a></td>
+            <td>Real Madrid</td>
+            <td><span class="position-badge">LW</span></td>
+            <td>33</td><td>24</td><td>11</td><td>8.1</td>
+          </tr>
+          <tr>
+            <td class="highlight"><a href="player-profile.html">A. Griezmann</a></td>
+            <td>Atlético Madrid</td>
+            <td><span class="position-badge">CAM</span></td>
+            <td>34</td><td>19</td><td>14</td><td>7.9</td>
+          </tr>
+          <tr>
+            <td class="highlight"><a href="player-profile.html">P. Gavi</a></td>
+            <td>FC Barcelona</td>
+            <td><span class="position-badge">CM</span></td>
+            <td>30</td><td>6</td><td>12</td><td>7.5</td>
+          </tr>
+          <tr>
+            <td class="highlight"><a href="player-profile.html">T. Kroos</a></td>
+            <td>Real Madrid</td>
+            <td><span class="position-badge">CDM</span></td>
+            <td>29</td><td>4</td><td>16</td><td>7.7</td>
+          </tr>
+          <tr>
+            <td class="highlight"><a href="player-profile.html">M. ter Stegen</a></td>
+            <td>FC Barcelona</td>
+            <td><span class="position-badge">GK</span></td>
+            <td>32</td><td>0</td><td>0</td><td>7.4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StatFoot Pro — Proyecto de aprendizaje Full-Stack</p>
+  </footer>
+
+</body>
+</html>

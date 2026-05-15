@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubes — StatFoot Pro</title>
+  <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="dashboard.html" class="nav-logo">⚽ StatFoot Pro</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+        <li><a href="clubs.html" class="nav-link active">Clubes</a></li>
+        <li><a href="players.html" class="nav-link">Jugadores</a></li>
+        <li><a href="matches.html" class="nav-link">Partidos</a></li>
+      </ul>
+      <div class="nav-auth">
+        <a href="login.html" class="btn btn-ghost">Ingresar</a>
+        <a href="register.html" class="btn btn-primary">Registrarse</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-wrapper">
+    <h1 class="page-title">Clubes — La Liga 2024/25</h1>
+
+    <div class="filter-bar">
+      <div class="form-group">
+        <label class="form-label" for="search-club">Buscar club</label>
+        <input class="form-input" type="text" id="search-club" placeholder="Nombre del club...">
+      </div>
+    </div>
+
+    <div class="clubs-grid" id="clubs-grid">
+      <a href="club-profile.html" class="club-card">
+        <div class="club-logo">🔵🔴</div>
+        <span class="club-name">FC Barcelona</span>
+        <span class="club-meta">La Liga · 85 pts</span>
+        <span class="badge badge-win">1°</span>
+      </a>
+      <a href="club-profile.html" class="club-card">
+        <div class="club-logo">⚪🟣</div>
+        <span class="club-name">Real Madrid</span>
+        <span class="club-meta">La Liga · 78 pts</span>
+        <span class="badge badge-win">2°</span>
+      </a>
+      <a href="club-profile.html" class="club-card">
+        <div class="club-logo">🔴⚪</div>
+        <span class="club-name">Atlético Madrid</span>
+        <span class="club-meta">La Liga · 71 pts</span>
+        <span class="badge badge-draw">3°</span>
+      </a>
+      <a href="club-profile.html" class="club-card">
+        <div class="club-logo">🔴⚪</div>
+        <span class="club-name">Athletic Club</span>
+        <span class="club-meta">La Liga · 62 pts</span>
+        <span class="badge badge-draw">4°</span>
+      </a>
+      <a href="club-profile.html" class="club-card">
+        <div class="club-logo">🔵⚪</div>
+        <span class="club-name">Real Sociedad</span>
+        <span class="club-meta">La Liga · 57 pts</span>
+        <span class="badge badge-draw">5°</span>
+      </a>
+      <a href="club-profile.html" class="club-card">
+        <div class="club-logo">⚪🔴</div>
+        <span class="club-name">Sevilla FC</span>
+        <span class="club-meta">La Liga · 51 pts</span>
+        <span class="badge badge-loss">6°</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 StatFoot Pro — Proyecto de aprendizaje Full-Stack</p>
+  </footer>
+
+</body>
+</html>
